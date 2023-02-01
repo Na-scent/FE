@@ -5,11 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Web1 - HTML</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1 ><a href="index.html">WEB</font></h1>
-  <div id = "index">
+
+  <input type="button" value="day" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'day'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'powderblue';
+      i += 1;
+    }  
+  }
+  else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'pink';
+      i += 1;
+    }
+  }
+  ">
+  
+
+  <div class = "index">
+
     <ol>
       <li><a href="1.html" class = "c1" class ="c2">HTML</font></li>
       <li><a href="2.html" class = "c2" >CSS</font></li>
@@ -19,10 +49,34 @@
     <div id = "info">
       <h2>WEB</h2>
       <img style = "width : 500px" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2938&q=80" alt="coding">
+
       <p>
         The Web is the common name for the World Wide Web, a subset of the Internet consisting of the pages that can be accessed by a Web browser. Many people assume that the Web is the same as the Internet, and use these terms interchangeably. However, the term Internet actually refers to the global network of servers that makes the information sharing that happens over the Web possible. So, although the Web does make up a large portion of the Internet, but they are not one and same.
       </p>
+
     </div>
   </div>
+
+  <input type="button" value="day" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'day'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'night';
+    
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'powderblue';
+      i += 1;
+    }  
+  }
+  else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'day';
+  }
+  ">
+
 </body> 
 </html>
