@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: darkslateblue;
+  
+}
+
+.target{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+  text-align: center;
+  color : white;
+}
+.material-icons{
+  font-size:200px;
+}
+
+.lg-size{
+  font-size:35px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sm-size{
+  font-size:25px;
+}
+
+#dynamic{
+  position : relative;
+  display: inline-block;
+}
+
+#dynamic::after{
+  content : "";
+  display: block;
+  position: absolute;
+  top:0;
+  right: -10px;
+  width:2px;
+  height : 100%;
+  background-color: white;
+}
+
+#dynamic.active::after{
+  display : none;
+}
