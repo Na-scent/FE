@@ -1,0 +1,78 @@
+@font-face {
+  font-family: abster;
+  src: url(.font/abster-webfont.woff) format('woff');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width : 100%;
+  height : 100vh;
+  background : linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),url(./sucoding_design_house/images/room.jpg)
+}
+.container .header{
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header h1 a{
+  text-decoration: none;
+  color: white;
+  font-family : abster;
+}
+
+.container .nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.container .nav ul li a{
+  text-decoration: none;
+  color : white;
+  transition: all .3s;
+}
+
+.container .nav ul li a:hover{
+  color: darkslategray;
+}
+
+.hero{
+  position : absolute;
+  top : 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+  text-align: center;
+  color : white;
+  font-family : Verdana, Geneva, Tahoma, sans-serif
+}
+
+.hero h2{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p{
+  font-size : 20px;
+  margin-bottom: 20px;
+}
+
+.hero button{
+  background: none;
+  border: 2px solid darkseagreen;
+  color :white;
+  padding : 15px 20px;
+  border-radius : 20px;
+  outline : none;
+  cursor : pointer;
+  transition: all .4s;
+}
+
+.hero button:hover{
+  background-color: darkslategray;
+}
