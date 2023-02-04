@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content : center;
+  align-items :center;
+  height: 100vh;
+}
+
+.container{
+  perspective: 1000px; /*보통 가장 바깥 div tag에 줌*/
+}
+.cube{
+  width : 128px;
+  height : 128px;
+  transform-style: preserve-3d;
+  transition : all 1s;
+}
+
+img{
+  position: absolute;
+  top:0;
+  left : 0;
+}
+.facebook{
+transform : translateZ(64px);
+}
+.instagram{
+  transform: rotateX(90deg) translateZ(64px);
+}
+.twitter{
+  transform: rotateX(180deg) translateZ(64px);
+}
+.youtube{
+  transform: rotateX(270deg) translateZ(64px);
+}

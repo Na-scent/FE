@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D cube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cube">
+      <img class= "facebook" 
+      src="./3d_cube/facebook.png" alt="facebook.img">
+      <img class = "instagram"
+      src="./3d_cube/instagram.png" alt="instagram.img">
+      <img class = "twitter"
+      src="./3d_cube/twitter.png" alt="twitter.img">
+      <img class = "youtube"
+      src="./3d_cube/youtube.png" alt="youtube.img">
+    </div>
+  </div>
+  <script>
+    let deg = 0;
+    setInterval(() =>{
+      deg = deg - 90;
+      document.querySelector(".cube").style.transform = 'rotateX(' + deg + 'deg)';
+    }, 1000)
+  </script>
+</body>
+</html>
