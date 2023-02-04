@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+.container{
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+  perspective: 1500px;
+}
+.btn{
+  color : white;
+  width : 200px;
+  height: 100px;
+  text-align: center;
+  line-height : 100px;
+  transform-style: preserve-3d;
+  transition : .5s;
+  cursor: pointer;
+}
+
+.btn:hover{
+  transform: rotateX(-90deg)
+}
+
+.btn .front{
+  background-color: orange;
+  transform: translateZ(50px);
+}
+
+.btn .back{
+  background-color: darkorange;
+  transform : rotateX(90deg) translateZ(150px);
+}
+
